@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Tracker</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Exercise Tracker</h1>
+      <label class="theme-switch">
+        <span>Dark mode</span>
+        <input id="theme-toggle" type="checkbox" aria-label="Toggle dark mode">
+      </label>
+    </header>
+
+    <nav aria-label="Primary">
+      <ul class="tabs" role="tablist">
+        <li><button class="tab-button active" data-tab="tab-log" role="tab" aria-selected="true">Log Exercise</button></li>
+        <li><button class="tab-button" data-tab="tab-dashboard" role="tab" aria-selected="false">Dashboard</button></li>
+        <li><button class="tab-button" data-tab="tab-trends" role="tab" aria-selected="false">Trends</button></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="tab-log" class="tab-panel active" role="tabpanel"></section>
+      <section id="tab-dashboard" class="tab-panel" role="tabpanel" hidden></section>
+      <section id="tab-trends" class="tab-panel" role="tabpanel" hidden></section>
+    </main>
+
+    <footer class="site-footer">
+      <small>Client-side only. Data remains in your browser via LocalStorage.</small>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+    <script type="module" src="./assets/js/main.js"></script>
+  </body>
+</html>

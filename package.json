@@ -1,0 +1,15 @@
+{
+  "name": "exercise-tracker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "clean": "rm -rf docs/assets/js",
+    "build": "npm run clean && tsc -p tsconfig.json && node ./scripts/copy-static.mjs",
+    "test": "node --test tests/summaryService.test.mjs",
+    "prepare:docs": "npm run build"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.2"
+  }
+}

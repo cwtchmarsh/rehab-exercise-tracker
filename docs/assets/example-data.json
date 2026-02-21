@@ -1,0 +1,28 @@
+[
+  {
+    "date": "2026-02-14",
+    "exercises": [
+      { "id": "a1", "name": "Running", "durationMinutes": 35, "distanceKm": 5.2, "calories": 320 },
+      { "id": "a2", "name": "Push Ups", "durationMinutes": 10, "sets": 4, "reps": 15 }
+    ]
+  },
+  {
+    "date": "2026-02-15",
+    "exercises": [
+      { "id": "b1", "name": "Cycling", "durationMinutes": 50, "distanceKm": 18.5, "calories": 430 }
+    ]
+  },
+  {
+    "date": "2026-02-16",
+    "exercises": [
+      { "id": "c1", "name": "Yoga", "durationMinutes": 30, "calories": 120 },
+      { "id": "c2", "name": "Walking", "durationMinutes": 25, "distanceKm": 2.1 }
+    ]
+  },
+  {
+    "date": "2026-02-18",
+    "exercises": [
+      { "id": "d1", "name": "Strength Training", "durationMinutes": 45, "sets": 5, "reps": 10, "calories": 300 }
+    ]
+  }
+]
